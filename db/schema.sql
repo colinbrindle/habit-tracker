@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS master_db;
+
+CREATE DATABASE master_db;
