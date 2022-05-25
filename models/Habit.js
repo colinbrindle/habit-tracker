@@ -18,7 +18,6 @@ Habit.init(
     },
     value: {
       type: DataTypes.REAL,
-      unique: true,
       validate: {
         isNumeric: true,
       },
