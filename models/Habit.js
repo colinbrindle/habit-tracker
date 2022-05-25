@@ -16,6 +16,10 @@ Habit.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    metric: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     value: {
       type: DataTypes.REAL,
       validate: {
