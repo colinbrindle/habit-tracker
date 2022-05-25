@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS master_db;
+DROP DATABASE IF EXISTS habits_db;
 
-CREATE DATABASE master_db;
+CREATE DATABASE habits_db;

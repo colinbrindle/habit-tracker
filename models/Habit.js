@@ -2,9 +2,9 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Tracker extends Model {}
+class Habit extends Model {}
 
-Tracker.init(
+Habit.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -23,6 +23,12 @@ Tracker.init(
         isNumeric: true,
       },
     },
+    entry_date: {
+      type: DataTypes.DATEONLY,
+      validate: {
+        isDate: true,
+      },
+    },
     note: {
       type: DataTypes.TEXT,
     },
@@ -39,8 +45,8 @@ Tracker.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "tracker",
+    modelName: "habit",
   }
 );
 
-module.exports = Tracker;
+module.exports = Habit;
