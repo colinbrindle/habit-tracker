@@ -36,6 +36,7 @@ User.init(
     },
   },
   {
+    // Password encryption with bcrypt
     hooks: {
       beforeCreate: async (userData) => {
         userData.password = await bcrypt.hash(userData.password, 10);
