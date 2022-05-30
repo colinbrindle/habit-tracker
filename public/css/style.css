@@ -1,0 +1,33 @@
+:root {
+    --barely-green: #e7fae7;  
+    --pastel-green: #C1E1C1;  
+    --dark-green: #006837;
+}
+
+.site-bg{
+    background-color: var(--barely-green);
+}
+
+.nav-bg {
+    background-color: var(--pastel-green);
+}
+
+.brand-color {
+    color: var(--dark-green);
+}
+
+.footer-content {
+    position: fixed;
+    padding: 5px;
+    bottom: 0;
+    width: 100%; 
+    background-color: var(--pastel-green);
+    color: var(--dark-green);
+    text-align: center;
+}
+
+.footer-link {
+    color: var(--dark-green);
+    text-decoration: none;
+
+}

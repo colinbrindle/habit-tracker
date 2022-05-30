@@ -8,11 +8,25 @@
     <link rel="stylesheet" type="text/css" href="/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="/imgs/havit.ico"/>
 </head>
-<body>
-    <h1>Havit! Habit Tracker</h1>
+<body class="site-bg">
+   <nav class="navbar navbar-expand-lg nav-bg">
+      <div class="container-fluid">
+        <a class="navbar-brand brand-color" href="#"><span class="fs-2 fw-bold">Havit!</span><span class="fs-4 fst-italic fw-light ps-1"> habit tracking made easy</span></a>
+        <div class="d-flex flex-row-reverse">
+            <div class="navbar-nav">
+                <a class="nav-link fs-5 ms-4 fst-italic" href="#">Dashboard</a>
+                <a class="nav-link fs-5 ms-4 fst-italic" href="#">Profile</a>
+                <a class="nav-link fs-5 ms-4 fst-italic" href="#">Login</a>
+                <a class="nav-link fs-5 ms-4 fst-italic" href="#">Logout</a>
+            </div>
+        </div>
+      </div>
+    </nav>
     <main>
         {{{body}}}
     </main>
+    <footer class="footer-content">© 2022 <a class="footer-link" href="https://github.com/colinbrindle" target="_blank">Colin Brindle</a>. All Rights Reserved.</footer>
 </body>
 </html>
